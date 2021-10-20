@@ -1,9 +1,6 @@
-import bitcodec, { IBitcodec } from "@bitmatrix/bitcodec";
-
+import bitcodec, { IBitcodec, buffer2hex, hex2buffer } from "@bitmatrix/bitcodec";
 import { toTxSegwit, toTxSegwitBase } from "../converter";
-import { buffer2hex, hex2buffer } from "../helper";
 import { TxBase, TxSegwit, TxSegwitBase, TxSegwitBaseParsed } from "../models/Tx";
-
 import { Tx, TxWitnessBase } from "./codecs";
 import { WitnessLocktimeCodec } from "./WitnessLocktimeCodec";
 

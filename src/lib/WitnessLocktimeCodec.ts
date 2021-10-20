@@ -1,5 +1,4 @@
-import bitcodec, { IBitcodec } from "@bitmatrix/bitcodec";
-import { buffer2hex, hex2buffer } from "../helper";
+import bitcodec, { IBitcodec, buffer2hex, hex2buffer } from "@bitmatrix/bitcodec";
 
 export class WitnessLocktimeCodec implements IBitcodec<{ witnessScriptsArray: string[][]; lockTime: number }> {
   private witnessLocktimeData = bitcodec.Object([

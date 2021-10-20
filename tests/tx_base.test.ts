@@ -1,4 +1,4 @@
-import { buffer2hex, hex2buffer } from "../src";
+import { buffer2hex, hex2buffer } from "@bitmatrix/bitcodec";
 import { Tx } from "../src/lib/codecs";
 import { datas } from "./data/tx_base";
 

@@ -1,4 +1,5 @@
-import { TxCodec, buffer2hex, hex2buffer } from "../src";
+import { buffer2hex, hex2buffer } from "@bitmatrix/bitcodec";
+import { TxCodec } from "../src";
 import { datas } from "./data/tx_all";
 
 datas.forEach((data, index) => {

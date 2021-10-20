@@ -1,4 +1,5 @@
-import { BlockHeader, BlockHeaderCodec, buffer2hex, hex2buffer } from "../src";
+import { buffer2hex, hex2buffer } from "@bitmatrix/bitcodec";
+import { BlockHeader, BlockHeaderCodec } from "../src";
 import { datas } from "./data/block_header";
 
 datas.forEach((data, index) => {

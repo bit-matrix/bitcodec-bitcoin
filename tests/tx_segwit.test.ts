@@ -1,4 +1,4 @@
-import { buffer2hex, hex2buffer } from "../src";
+import { buffer2hex, hex2buffer } from "@bitmatrix/bitcodec";
 import { TxSegwitBase, TxSegwitBaseParsed } from "../src/models/Tx";
 import { toTxSegwit, toTxSegwitBase } from "../src/converter";
 import { TxWitnessBase } from "../src/lib/codecs";
