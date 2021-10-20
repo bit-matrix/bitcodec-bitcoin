@@ -1,0 +1,10 @@
+{
+  "name": "@bitmatrix/bitcodec-bitcoin",
+  "version": "1.0.0",
+  "description": "bitcodec bitcoin",
+  "main": "index.js",
+  "dependencies": {
+    "@bitmatrix/bitcodec": "^1.0.0"
+  },
+  "license": "MIT"
+}
