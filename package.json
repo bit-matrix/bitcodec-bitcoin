@@ -8,7 +8,9 @@
     "build-dev": "npx webpack --mode development --config webpack.config.js",
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@bitmatrix/bitcodec": "^1.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
