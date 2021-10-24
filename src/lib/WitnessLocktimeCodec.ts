@@ -19,13 +19,9 @@ export class WitnessLocktimeCodec implements IBitcodec<{ witnessScriptsArray: st
   }
 
   encode = (value: any, buffer?: Buffer | undefined, offset?: number | undefined): Buffer => {
-    const result = this.witnessLocktimeData.encode(value, buffer, offset).slice(1);
-
+    buffer = this.witnessLocktimeData.encode(value, buffer, offset).slice(1);
     this.encodeBytes = this.witnessLocktimeData.encodeBytes;
-    this.decodeBytes = this.witnessLocktimeData.decodeBytes;
-    this.encodingLength = this.witnessLocktimeData.encodingLength;
-
-    return result;
+    return buffer;
   };
 
   decode = (buffer: Buffer, offset?: number | undefined, end?: number | undefined): { witnessScriptsArray: string[][]; lockTime: number } => {
@@ -33,11 +29,7 @@ export class WitnessLocktimeCodec implements IBitcodec<{ witnessScriptsArray: st
     const bufferHex = buffer2hex(buffer);
     const newBuffer = hex2buffer(inputCountHex + bufferHex);
     const result = this.witnessLocktimeData.decode(newBuffer, offset, end);
-
-    this.encodeBytes = this.witnessLocktimeData.encodeBytes;
     this.decodeBytes = this.witnessLocktimeData.decodeBytes;
-    this.encodingLength = this.witnessLocktimeData.encodingLength;
-
     return result as { witnessScriptsArray: string[][]; lockTime: number };
   };
 }
