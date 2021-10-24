@@ -8,8 +8,8 @@ datas.forEach((data, index) => {
     expect(buffer2hex(blockBuffer) as Block).toEqual(data.raw);
   });
 
-  // test("block encode index:" + index, () => {
-  //   const blockHexBuffer = bitcoin.BlockCodec.encode(hex2buffer(data.raw));
-  //   expect(buffer2hex(blockHexBuffer)).toEqual(data.hex);
-  // });
+  test("block encode index:" + index, () => {
+    const blockHexBuffer = BlockCodec.encode(hex2buffer(data.raw));
+    expect(buffer2hex(blockHexBuffer)).toEqual(data.hex);
+  });
 });
