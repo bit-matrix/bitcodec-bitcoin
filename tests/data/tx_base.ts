@@ -173,4 +173,23 @@ export const datas: TxBaseData[] = [
       lockTime: 0,
     },
   },
+  {
+    txid: "",
+    hash: "",
+    hex: "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff08044c86041b020602ffffffff0100f2052a010000004341041b0e8c2567c12536aa13357b79a073dc4444acb83c4ec7a0e2f99dd7457516c5817242da796924ca4e99947d087fedf9ce467cb9f7c6287078f801df276fdf84ac00000000",
+    raw: {
+      version: 1,
+      txIn: [
+        {
+          previousOutput: { hash: "0000000000000000000000000000000000000000000000000000000000000000", index: 4294967295 },
+          signatureScript: "044c86041b020602",
+          sequence: 4294967295,
+        },
+      ],
+      txOut: [
+        { value: 5000000000, pkScript: "41041b0e8c2567c12536aa13357b79a073dc4444acb83c4ec7a0e2f99dd7457516c5817242da796924ca4e99947d087fedf9ce467cb9f7c6287078f801df276fdf84ac" },
+      ],
+      lockTime: 0,
+    },
+  },
 ];
